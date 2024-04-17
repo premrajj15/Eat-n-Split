@@ -185,14 +185,14 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
 
       <label>💰 Bill value</label>
       <input
-        type="number"
+        type="text"
         value={bill}
         onChange={(e) => setBill(+e.target.value)}
       />
 
       <label>🧍‍♀️Your expense</label>
       <input
-        type="number"
+        type="text"
         value={paidByUser}
         onChange={(e) =>
           setpaidByUser(+e.target.value > bill ? paidByUser : +e.target.value)
